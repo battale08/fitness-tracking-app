@@ -24,6 +24,34 @@
 ## What I used AI tools for
 I used AI-assisted tools to help ideate UI copy and propose the AI suggestion API design. (Examples: ChatGPT to brainstorm risk-o-meter grouping; Copilot for small code suggestions). All production code and logic are written and reviewed by me.
 
+## Project folder structure
+
+├─ src/
+│  ├─ assets/
+│  ├─ components/
+│  │  ├─ GoalCard.tsx
+│  │  ├─ RiskOMeter.tsx
+│  │  ├─ ProgressSummary.tsx
+│  ├─ contexts/
+│  │  ├─ AppProvider.tsx
+│  ├─ screens/
+│  │  ├─ Onboarding/
+│  │  │  ├─ Welcome.tsx
+│  │  │  ├─ UserInfo.tsx
+│  │  │  ├─ Confirmation.tsx
+│  │  ├─ Dashboard.tsx
+│  │  ├─ Progress.tsx
+│  │  ├─ RiskDetail.tsx
+│  ├─ services/
+│  │  ├─ storage.ts
+│  ├─ types/
+│  │  ├─ index.ts
+│  ├─ utils/
+│  │  ├─ goals.ts
+│  ├─ App.tsx
+├─ package.json
+├─ README.md
+
 ## Notes & future improvements
 - Replace simple risk heuristic with validated clinical model and user consent flow.
 - Add biometric integrations and secure storage.
